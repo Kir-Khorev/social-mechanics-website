@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Gilroy"),
+         url("/fonts/Gilroy-Regular.woff2") format("woff2"),
+         url("/fonts/Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Gilroy";
+    font-style: medium;
+    font-weight: 600;
+    src: local("Gilroy"),
+         url("/fonts/Gilroy-Medium.woff2") format("woff2"),
+         url("/fonts/Gilroy-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "Gilroy";
+    font-style: bold;
+    font-weight: 800;
+    src: local("Gilroy"),
+         url("/fonts/Gilroy-Bold.woff2") format("woff2"),
+         url("/fonts/Gilroy-Bold.woff") format("woff");
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Gilroy", sans-serif;
+    background: #EFF1E6;
+}
+h1{
+    font-size: 64px;
+    font-style: bold;
+    font-weight: 800;
+    line-height: 77px;
+    letter-spacing: 0em;
+}
+h2{
+    font-family: Gilroy;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 77px;
+    margin: 0 ;
+}
+h3{
+    font-family: Gilroy;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.container{
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    
+}
+.mainPage{
+    display: flex;
+    min-height: 700px;
+}
+.hero{
+    background: linear-gradient(137.87deg, #FFE486 0.76%, #008A97 102.1%);
+    max-width: 600px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.hero-btn{
+    border: 2px solid #141B21;
+    color: #141B21;
+    background-color: rgba(0, 125, 215, 0.3);
+    padding: 17px 35px;
+    margin-top: 50px;
+}
+.mission{
+    background-color: #141B21;
+    padding-top: 50px;
+    padding-left: 50px;
+    min-width: 900px;
+}
+.nav-list{
+    color: white;
+    display: flex;
+    margin-left: 300px;
+    
+}
+.nav__item{
+    margin-right: 50px;
+    cursor: pointer;
+    transition: border-bottom;
+}
+.nav__item:hover{
+    border-bottom: 1px solid #FFE486;
+    padding-top: 4px;
+    transition: .3s ease;
+}
+.mission-heading{
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+.mission-defenition{
+    font-family: Gilroy;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+.aboutUs{
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.video{
+    display: flex;
+    align-items: center;
+}
+.video iframe{
+    min-width: 600px;
+}
+.video p{
+    margin-left: 50px;
+}
+.center-list{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+}
+.center-items{
+    background-color: white;
+    box-shadow: 0px 0px 29px rgba(0, 43, 47, 0.28);
+    margin-top: 30px;
+    max-width: 500px;
+}
+.center-items p{
+    max-width: 400px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+}
+.center-items h3{
+    padding-left: 35px;
+}
+.center-items img{
+    max-width: 500px
+}
+.center-items:not(:nth-child(2n)){
+    margin-right: 50px;
+    align-items: center;
+}

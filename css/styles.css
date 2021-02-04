@@ -29,6 +29,10 @@ body {
     font-family: "Gilroy", sans-serif;
     background: #EFF1E6;
 }
+a{
+    text-decoration: none;
+    color: #141B21;
+}
 h1{
     font-size: 64px;
     font-style: bold;
@@ -60,7 +64,8 @@ p{
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
-
+    /* margin: 0; */
+    padding: 0;
 }
 ul{
     list-style: none;
@@ -110,6 +115,9 @@ ul{
     cursor: pointer;
     transition: border-bottom;
 }
+.nav__item a{
+    color: #fff;
+}
 .nav__item:hover{
     border-bottom: 1px solid #FFE486;
     padding-top: 4px;
@@ -149,7 +157,8 @@ ul{
     display: flex;
     flex-wrap: wrap;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    margin-right: 0;
 }
 .center-items{
     background-color: white;
@@ -165,10 +174,201 @@ ul{
 .center-items h3{
     padding-left: 35px;
 }
-.center-items img{
+.center-items-img{
     max-width: 500px
 }
 .center-items:not(:nth-child(2n)){
     margin-right: 50px;
     align-items: center;
+}
+.projects{
+    margin-top: 75px;
+}
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+}
+.projects-item{
+    padding: 15px 35px 0 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 29px rgba(0, 43, 47, 0.28);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.projects-item:not(:nth-child(2n)){
+    margin-right: 50px;
+    align-items: center;
+}
+.heading-projects{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+    color: #141B21;
+    max-width: 500px;
+}
+.projects-item-author-name{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #141B21;
+    margin: 0;
+
+}
+.projects-item-description{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #141B21;
+    margin-bottom: 45px;
+}
+.projects-button{
+    background-color: #fff;
+    color: #141B21;
+    border: #141B21 1px solid;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #141B21;
+    padding: 22px 50px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10%;
+}
+.projects-item-author-p{
+    margin-bottom: 25px;
+}
+.more-btn{
+    background-color: #141B21;
+    color: #fff;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    padding: 22px 50px;
+    cursor: pointer;
+    align-items: flex-end;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: 58px;
+}
+#moreProjects{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0;
+}
+.more-btn a{
+    color: #fff;
+}
+.events{
+    margin-top: 75px;
+}
+.events-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0;
+}
+.events-list-item{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 29px rgba(0, 43, 47, 0.28);
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+.events-list-item:not(:nth-child(2n)){
+    margin-right: 50px;
+    align-items: center;
+}
+.events-content{
+    padding: 0 35px 25px 35px;
+}
+.date p{
+    margin: 0;
+}
+.events-description{
+    margin: 24px 0;
+}
+.friends{
+    margin-top: 75px;
+}
+.partners{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.partners-item img{
+    max-width: 80%;
+}
+.team{
+    margin-top: 75px;
+}
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.team-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.team-item:not(:last-child){
+    margin-right: 75px;
+    align-items: center;
+}
+.team-person-name{
+    margin: 0;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.team-description{
+    max-width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer{
+    margin-top: 90px;
+    background: white;
+}
+.footer img{
+    margin-top: 25px;
+}
+.footer-contacts{
+    text-align: center;
+}
+.footer-contacts-lists{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.contacts-items{
+    margin-right: 10px;
+}
+.contacts-items img{
+    max-width: 80%;
 }

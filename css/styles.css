@@ -351,6 +351,16 @@ ul{
     text-align: center;
     margin-top: 20px;
 }
+form{
+    align-items: center;
+}
+.input{
+    padding: 20px;
+    background-color: #EFF1E6;
+    border: 1px solid #141B21;
+    margin-right: 60px;
+    min-width: 350px;
+}
 .footer{
     margin-top: 90px;
     background: white;

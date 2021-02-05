@@ -307,14 +307,14 @@ ul{
 .partners{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin-right: 0;
     align-items: center;
     justify-content: space-between;
 }
 .partners-item img{
-    max-width: 80%;
+    max-width: 50%;
 }
 .team{
     margin-top: 75px;

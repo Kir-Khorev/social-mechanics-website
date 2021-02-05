@@ -8,6 +8,7 @@
     <link rel="preload" href="/fonts/Gilroy-Bold.woff2" as="font">
     <link rel="preload" href="/fonts/Gilroy-Medium.woff2" as="font">
     <link rel="preload" href="/fonts/Gilroy-Regular.woff2" as="font">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
 <body>
     <main>
@@ -475,10 +476,10 @@
         <section class="help">
             <div class="container">
                 <h2>Помочь проекту</h2>
-                <form action="" class="feedback-form">
-                    <input class="input" type="text" placeholder="Имя">
-                    <input class="input" type="email" name="email" id="email" placeholder="E-mail">
-                    <button type="submit" class="more-btn">Связаться с нами</button>
+                <form action="https://send.pageclip.co/rMS0mehaTlAvpxrF11S5nrsJVScTMqCP" class="pageclip-form" method="post" class="feedback-form">
+                    <input class="input" name="name" type="text" value="Имя">
+                    <input class="input" type="email" name="email" id="email" value="E-mail">
+                    <button id="btn" type="submit" class="more-btn" onclick="document.getElementById('btn').style.backgroundColor = 'black' ">Связаться с нами</button>
                 </form>
             </div>
         </section>
@@ -499,9 +500,10 @@
                 <a href="https://www.youtube.com/channel/UCtLoARmZFcv8BL6ZkqHbB6w"><img src="./img/bxl-youtube.svg.png" alt=""></a>
             </li>
             <li class="contacts-items">
-                <a href="https://t.me/Marina_Kuzyakina"><img src="./img/bxl-telegram.svg.png" alt=""></a>
+                <a href="https://t.me/ssc_mechanism"><img src="./img/bxl-telegram.svg.png" alt=""></a>
             </li>
         </ul>
     </footer>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>

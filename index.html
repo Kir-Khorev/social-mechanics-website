@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Научный центр "Механизм"</title>
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
     <link rel="preload" href="/fonts/Gilroy-Bold.woff2" as="font">
     <link rel="preload" href="/fonts/Gilroy-Medium.woff2" as="font">
     <link rel="preload" href="/fonts/Gilroy-Regular.woff2" as="font">
@@ -12,16 +13,14 @@
 </head>
 <body>
     <main>
-        <div class="mainPage">
-            <section class="hero">
-                <div class="">
-                    <img src="./img/logo.svg" alt="Logo" href="#">
-                    <h1>Студенческий научный центр "Механизм"</h1>
-                    <p>Студенческий научный центр «Механизм» - это место, где создаётся будущее! </p>
-                    <button class="hero-btn">Узнать больше</button>
-                </div>
-            </section>
-            <section class="mission">
+        <section class="header">
+            <div class="hero">
+                <img src="./img/logo.svg" alt="Logo" href="#">
+                <h1>Студенческий научный центр "Механизм"</h1>
+                <p>Студенческий научный центр «Механизм» - это место, где создаётся будущее! </p>
+                <button class="hero-btn">Узнать больше</button>
+            </div>
+            <div class="mission">
                 <ul class="nav-list">
                     <li class="nav__item"><a>О нас</a></li>
                     <li class="nav__item"><a>Проекты</a></li>
@@ -30,32 +29,21 @@
                     <li class="nav__item"><a>Контакты</a></li>
                 </ul>
                 <h2 class="mission-heading">Миссия центра:</h2>
-                <span class="mission-defenition">Выявления и поддержка 
-                    талантливой молодежи</span>
-            </section>
-        </div>
+                <div class="mission-defenition">Выявления и поддержка талантливой молодежи</div>
+            </div>
+        </section>
         <section class="aboutUs">
             <div class="container">
-                <h2>О нас</h2>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nzTe39DJRZw" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                    <p>
+                <h2 class="section-title">О нас</h2>
+                <div class="about-content">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nzTe39DJRZw" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="about__text">
                         Построения системы сетевого взаимодействия с образовательными организациями,
-                         предприятиями, Построения системы сетевого взаимодействия с образовательными 
-                         организациями, предприятиями, Построения системы сетевого взаимодействия с 
-                         образовательными организациями, предприятиями, Построения системы сетевого 
-                         взаимодействия с образовательными организациями, предприятиями, Построения 
-                         системы сетевого взаимодействия с образовательными организациями, предприятиями,
-                          Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
-                          Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
-                          Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
-                          Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
-                          Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
-                          Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
-                          Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
-                        Построения системы сетевого взаимодействия с образовательными организациями, предприятиями, 
+                        предприятиями. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus veniam laborum expedita hic illum beatae quaerat facere, libero commodi, sequi fugit. Maxime, aliquid nostrum aut molestiae mollitia ducimus consequatur non fugit dolorem. Voluptatibus, perspiciatis iste quod dolorem totam odio minus similique voluptas atque. Similique accusamus earum vero reiciendis a, maxime commodi accusantium soluta ipsam minus reprehenderit vel. Eos officiis eius quas ratione dolores repudiandae dignissimos, nesciunt laboriosam rerum, facere amet reiciendis minima consectetur maiores ullam adipisci doloremque autem aperiam ad? Corrupti sequi architecto voluptatibus odit, impedit alias illo, amet ut optio rerum corporis vitae rem ex odio veniam animi expedita?
                     </p>
                 </div>
             </div>

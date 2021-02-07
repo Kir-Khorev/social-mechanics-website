@@ -3,52 +3,60 @@
     font-style: normal;
     font-weight: 400;
     src: local("Gilroy"),
-         url("/fonts/Gilroy-Regular.woff2") format("woff2"),
-         url("/fonts/Gilroy-Regular.woff") format("woff");
+        url("/fonts/Gilroy-Regular.woff2") format("woff2"),
+        url("/fonts/Gilroy-Regular.woff") format("woff");
 }
+
 @font-face {
     font-family: "Gilroy";
     font-style: medium;
     font-weight: 600;
     src: local("Gilroy"),
-         url("/fonts/Gilroy-Medium.woff2") format("woff2"),
-         url("/fonts/Gilroy-Medium.woff") format("woff");
+        url("/fonts/Gilroy-Medium.woff2") format("woff2"),
+        url("/fonts/Gilroy-Medium.woff") format("woff");
 }
+
 @font-face {
     font-family: "Gilroy";
     font-style: bold;
     font-weight: 800;
     src: local("Gilroy"),
-         url("/fonts/Gilroy-Bold.woff2") format("woff2"),
-         url("/fonts/Gilroy-Bold.woff") format("woff");
+        url("/fonts/Gilroy-Bold.woff2") format("woff2"),
+        url("/fonts/Gilroy-Bold.woff") format("woff");
 }
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: "Gilroy", sans-serif;
     background: #EFF1E6;
 }
-a{
+
+a {
     text-decoration: none;
     color: #141B21;
 }
-h1{
+
+h1 {
     font-size: 64px;
     font-style: bold;
     font-weight: 800;
     line-height: 77px;
     letter-spacing: 0em;
 }
-h2{
+
+h2 {
     font-family: Gilroy;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: 77px;
-    margin: 0 ;
+    margin: 0;
 }
-h3{
+
+h3 {
     font-family: Gilroy;
     font-size: 28px;
     font-style: normal;
@@ -58,7 +66,8 @@ h3{
     text-align: left;
 
 }
-p{
+
+p {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -67,30 +76,35 @@ p{
     /* margin: 0; */
     padding: 0;
 }
-ul{
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0
 }
-.container{
-        max-width: 1200px;
-        align-items: center;
-        margin: 0 auto;
-        padding-left: 15px;
-    
+
+.container {
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 15px;
+
 }
-.mainPage{
+
+.header {
     display: flex;
-    min-height: 700px;
+    width: 100%;
 }
-.hero{
+
+.hero {
     background: linear-gradient(137.87deg, #FFE486 0.76%, #008A97 102.1%);
-    max-width: 600px;
     padding-left: 50px;
     padding-top: 50px;
     padding-right: 50px;
+    width: 40%;
 }
-.hero-btn{
+
+.hero-btn {
     border: 2px solid #141B21;
     color: #141B21;
     background-color: rgba(0, 125, 215, 0.3);
@@ -98,101 +112,155 @@ ul{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.mission{
+
+.hero-btn:hover {
+    background-color: rgba(1, 94, 161, 0.836);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
     background-color: #141B21;
     padding-top: 50px;
-    padding-left: 50px;
-    min-width: 900px;
+    padding-left: 20px;
+    width: 60%;
 }
-.nav-list{
+
+.nav-list {
     color: white;
     display: flex;
-    margin-left: 300px;
-    
+    align-self: flex-end;
+    padding: 0 20px;
 }
-.nav__item{
-    margin-right: 50px;
+
+.nav__item {
+    margin-right: 10px;
     cursor: pointer;
-    transition: border-bottom;
+    font-size: 12px;
+    position: relative;
+    transition: all 0.6s;
 }
-.nav__item a{
+
+.nav__item a {
     color: #fff;
 }
-.nav__item:hover{
-    border-bottom: 1px solid #FFE486;
-    padding-top: 4px;
-    transition: .3s ease;
+
+.nav__item:before {
+    content: "";
+    width: 0;
+    height: 0.1em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #fff;
+    transition: all 0.3s;
 }
-.mission-heading{
+
+.nav__item:hover::before {
+    transition: .3s ease-in;
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
+.mission-heading {
     color: white;
     font-size: 36px;
     font-weight: 400;
-    margin-top: 100px;
+    margin-top: 71px;
+    padding: 10px;
 }
-.mission-defenition{
+
+.mission-defenition {
     font-family: Gilroy;
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height: 68px;
+    line-height: 2;
     letter-spacing: 0em;
     text-align: left;
     color: white;
-    max-width: 500px;
+    /* max-width: 500px; */
+    padding: 10px;
 }
-.aboutUs{
+
+.aboutUs {
     margin-top: 50px;
     margin-bottom: 70px;
 }
-.video{
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.about__text {
+    margin: 20px;
+}
+
+.video {
     display: flex;
     align-items: center;
 }
-.video iframe{
+
+.video iframe {
     max-width: 600px;
 }
-.video p{
+
+.video p {
     margin-left: 50px;
 }
-.center-list{
+
+.center-list {
     display: flex;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     margin-right: 0;
 }
-.center-items{
+
+.center-items {
     background-color: white;
     box-shadow: 0px 0px 29px rgba(0, 43, 47, 0.28);
     margin-top: 30px;
     max-width: 500px;
 }
-.center-items p{
+
+.center-items p {
     max-width: 400px;
     padding-bottom: 35px;
     padding-left: 35px;
 }
-.center-items h3{
+
+.center-items h3 {
     padding-left: 35px;
 }
-.center-items-img{
+
+.center-items-img {
     max-width: 500px
 }
-.center-items:not(:nth-child(2n)){
+
+.center-items:not(:nth-child(2n)) {
     margin-right: 50px;
     align-items: center;
 }
-.projects{
+
+.projects {
     margin-top: 75px;
 }
-.projects-list{
+
+.projects-list {
     display: flex;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     margin-right: 0;
 }
-.projects-item{
+
+.projects-item {
     padding: 15px 35px 0 35px;
     background: #FFFFFF;
     box-shadow: 0px 0px 29px rgba(0, 43, 47, 0.28);
@@ -201,11 +269,13 @@ ul{
     flex-direction: column;
     margin-top: 25px;
 }
-.projects-item:not(:nth-child(2n)){
+
+.projects-item:not(:nth-child(2n)) {
     margin-right: 50px;
     align-items: center;
 }
-.heading-projects{
+
+.heading-projects {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
@@ -214,7 +284,8 @@ ul{
     color: #141B21;
     max-width: 500px;
 }
-.projects-item-author-name{
+
+.projects-item-author-name {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
@@ -224,7 +295,8 @@ ul{
     margin: 0;
 
 }
-.projects-item-description{
+
+.projects-item-description {
     font-family: Gilroy;
     font-style: normal;
     font-weight: normal;
@@ -233,7 +305,8 @@ ul{
     color: #141B21;
     margin-bottom: 45px;
 }
-.projects-button{
+
+.projects-button {
     background-color: #fff;
     color: #141B21;
     border: #141B21 1px solid;
@@ -248,10 +321,12 @@ ul{
     position: relative;
     margin-bottom: 10%;
 }
-.projects-item-author-p{
+
+.projects-item-author-p {
     margin-bottom: 25px;
 }
-.more-btn{
+
+.more-btn {
     background-color: #141B21;
     color: #fff;
     font-family: Gilroy;
@@ -266,46 +341,57 @@ ul{
     margin-left: auto;
     margin-right: 58px;
 }
-#moreProjects{
+
+#moreProjects {
     flex-wrap: wrap;
     justify-content: center;
     margin-right: 0;
 }
-.more-btn a{
+
+.more-btn a {
     color: #fff;
 }
-.events{
+
+.events {
     margin-top: 75px;
 }
-.events-list{
+
+.events-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-right: 0;
 }
-.events-list-item{
+
+.events-list-item {
     background: #FFFFFF;
     box-shadow: 0px 0px 29px rgba(0, 43, 47, 0.28);
     max-width: 500px;
     margin-bottom: 20px;
 }
-.events-list-item:not(:nth-child(2n)){
+
+.events-list-item:not(:nth-child(2n)) {
     margin-right: 50px;
     align-items: center;
 }
-.events-content{
+
+.events-content {
     padding: 0 35px 25px 35px;
 }
-.date p{
+
+.date p {
     margin: 0;
 }
-.events-description{
+
+.events-description {
     margin: 24px 0;
 }
-.friends{
+
+.friends {
     margin-top: 75px;
 }
-.partners{
+
+.partners {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -314,29 +400,35 @@ ul{
     align-items: center;
     justify-content: space-between;
 }
-.partners-item img{
+
+.partners-item img {
     max-width: 50%;
 }
-.team{
+
+.team {
     margin-top: 75px;
 }
-.team-list{
+
+.team-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.team-item{
+
+.team-item {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
 }
-.team-item:not(:last-child){
+
+.team-item:not(:last-child) {
     margin-right: 75px;
     align-items: center;
 }
-.team-person-name{
+
+.team-person-name {
     margin: 0;
     font-family: Gilroy;
     font-size: 18px;
@@ -347,147 +439,216 @@ ul{
     text-align: center;
 
 }
-.team-description{
+
+.team-description {
     max-width: 200px;
     text-align: center;
     margin-top: 20px;
 }
-form{
+
+form {
     align-items: center;
 }
-.input{
+
+.input {
     padding: 20px;
     background-color: #EFF1E6;
     border: 1px solid #141B21;
     margin-right: 60px;
     min-width: 350px;
 }
-.footer{
+
+.footer {
     margin-top: 90px;
     background: white;
 }
-.footer img{
+
+.footer img {
     margin-top: 25px;
 }
-.footer-contacts{
+
+.footer-contacts {
     text-align: center;
 }
-.footer-contacts-lists{
+
+.footer-contacts-lists {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
 }
-.contacts-items{
+
+.contacts-items {
     margin-right: 10px;
 }
-.contacts-items img{
+
+.contacts-items img {
     max-width: 80%;
 }
 
-@media (max-width: 320px){
-    h1{
+@media (min-width: 1260px) {}
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column-reverse;
+        height: 100%
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .mission {
+        width: 100%;
+    }
+
+    .mission-defenition {
+        font-size: 30px;
+    }
+
+    .mission-heading {
+        margin-top: 10px;
+    }
+
+    h1 {
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
         font-size: 36px;
         line-height: 48px;
     }
-    .hero{
+
+    .hero {
         min-width: 320px;
         padding-left: 20px;
+        width: 50%;
     }
-    .mainPage{
+
+    .mainPage {
         flex-direction: column;
     }
-    .mission{
+
+    .mission {
         padding-bottom: 100px;
         min-width: 320px;
         padding-left: 20px;
     }
-    .video{
+
+    .video {
         flex-direction: column;
     }
-    .nav-list{
+
+    .nav-list {
         display: none;
     }
-    .mission-heading{
+
+    .mission-heading {
         font-size: 24px;
     }
-    .mission-defenition{
+
+    .mission-defenition {
         font-size: 36px;
         line-height: 48px;
     }
-    h2{
+
+    h2 {
         font-size: 36px;
     }
-    .video iframe{
+
+    .video iframe {
         max-width: 300px;
     }
-    .video p{
+
+    .video p {
         margin-left: 0;
     }
+
     .center-items-img {
         max-width: 300px;
     }
-    .center-items{
+
+    .center-items {
         max-width: 300px;
     }
+
     .center-items:not(:nth-child(2n)) {
         margin-right: 0;
         align-items: center;
     }
+
     .center-items h3 {
         padding-left: 15px;
     }
-    h3{
+
+    h3 {
         font-size: 18px;
         line-height: 24px;
     }
+
     .center-items p {
         padding-bottom: 15px;
         padding-left: 15px;
         max-width: 300px;
     }
+
     .projects-item:not(:nth-child(2n)) {
         margin-right: 0;
-        align-items: center;}
-    .heading-projects {
-            font-size: 22px;
-            line-height: 34px;
+        align-items: center;
     }
+
+    .heading-projects {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
     .projects-item-author-name {
         font-size: 17px;
         line-height: 25px;
     }
+
     .projects-item-description {
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 25px;
     }
+
     .projects-item-author-p {
         margin-bottom: 15px;
     }
-    .more-btn{
+
+    .more-btn {
         padding: 16px 32px;
     }
+
     .events-list {
         display: block;
     }
-    .events-list-item{
+
+    .events-list-item {
         min-width: 300px;
     }
+
     .events-list-item:not(:nth-child(2n)) {
         margin-right: 0;
         align-items: center;
     }
-    .projects-button{
+
+    .projects-button {
         padding: 16px 32px;
     }
-    .partners-item img{
+
+    .partners-item img {
         max-width: 20%;
     }
+
     .team-item:not(:last-child) {
         margin-right: 0;
         align-items: center;
     }
-    .input{
+
+    .input {
         margin-bottom: 20px;
     }
 }

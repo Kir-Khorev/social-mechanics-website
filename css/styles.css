@@ -279,9 +279,6 @@ ul {
     overflow: hidden;
 }
 
-/* .projects-item:not(:nth-child(2n)) {
-    align-items: center;
-} */
 
 .heading-projects {
     font-family: Gilroy;
@@ -595,7 +592,9 @@ form {
         width: 35%;
     }
 
-
+    .projects-item {
+        width: 70%;
+    }
 
 }
 
